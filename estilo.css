@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 /* --- Configurações Gerais --- */
+
+
 body {
-    background-color: rgba(158, 158, 11, 0.678);
+    background-color: rgba(196, 101, 12, 0.678);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -47,7 +49,9 @@ header {
     left: 00px;
     z-index: 100;
 }
-
+.prato_clicavel{
+    cursor: pointer;
+}
 #menu_navegacao {
     display: none; /* Controlado pelo seu JS */
     z-index: 99;
@@ -109,6 +113,7 @@ header {
     width: 60vw;
     height: auto;
     box-shadow: black 10px 2px 5px;
+    
 }
 
 
@@ -120,6 +125,7 @@ header {
     place-items: center; /* Centraliza tudo horizontal e verticalmente */
     width: 100%;
     padding: 50px 0;
+    
 }
 
 #fundo_pratos, #container_pratos_conteudo {
@@ -132,7 +138,6 @@ header {
     height: 1350px;
     z-index: 1; /* Camada de baixo */
     border-radius: 20px;
-    opacity: 0.8;
 }
 
 #container_pratos_conteudo {
@@ -230,10 +235,16 @@ header {
 }
 #quem_somos img{
     width: 90vw;
+    border-radius: 20px;
+    box-shadow: black 10px 5px 2px;
+    margin-left: 2vw;
     
 }
 
-
+.quem_somos{
+    width: 90vw;
+    padding: 2vw;
+}
 
 /* --- WhatsApp --- */
 .botao-whatsapp-fixo {
@@ -253,6 +264,19 @@ header {
 
 .botao-whatsapp-fixo img {
     width: 35px;
+}
+
+.rodape{
+    background-color: black;
+    height: 20vh;
+    
+}
+
+.rodape a, .rodape pre{
+    color: white;
+    text-decoration: none;
+    padding: 3vw;
+    font-size: 10px;
 }
 
 /* --- Responsividade (Telas Grandes) --- */
@@ -276,7 +300,30 @@ header {
         left: 40px;
     }
 
+    #topo_esquerda{
+        margin-left: 15px;
+        border: red 2px solid;
+        border-radius: 20px;
+        background-color: rgb(212, 127, 29);
 
+    }
+    
+    #topo_esquerda:hover{
+        box-shadow: black 10px 5px 5px;
+        transform: scale(1.05) translateY(-2px);
+    }
+
+    #topo_direita{
+         margin-right: 15px;
+        border: red 2px solid;
+        border-radius: 20px;
+        background-color: rgb(212, 127, 29);
+
+    }
+    #topo_direita:hover{
+        box-shadow: black -10px 5px 5px;
+        transform: scale(1.05) translateY(-2px);
+    }
 
 
 
@@ -345,4 +392,14 @@ header {
         max-width: 45vw;
         box-shadow: black 10px 10px 15px;
     }
+    .rodape{
+        height: 20vw;
+        padding-top: 2vw;
+    }
+
+    #rodape pre, #rodape a{
+        font-size: 20px;
+    }
+
+
 }

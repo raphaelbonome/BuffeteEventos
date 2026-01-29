@@ -14,15 +14,15 @@
         
         <nav id="menu_navegacao">
             <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#topo">Serviços</a></li>
+                <li><a href="#quem_somos">Sobre Nós</a></li>
+                <li><a href="#rodape">Contato</a></li>
             </ul>
         </nav>
     </header>
     <section id=" topo1">
         <div id="topo">
-    <div id="topo_esquerda"> 
+    <div id="topo_esquerda" class="prato_clicavel" data-id="prato1"> 
         <h2>Alimentando a alma</h2>
         <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500&auto=format&fit=crop" alt="Foto de comida">
         <p>Oferecemos uma experiência gastronômica única, combinando tradição e inovação para criar pratos que encantam o paladar e a alma.</p>
@@ -34,26 +34,26 @@
         <img id="fundo_pratos" src="menu_fundo.png" alt="Fundo decorativo do menu">
 
         <div id="container_pratos_conteudo">
-            <div id="produto1" class="pratos">
+            <div id="produto1" class="pratos prato_clicavel" data-id="prato2">
                 <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80&w=200" alt="Comida Italiana">
                 <p>Sabores da Itália no seu prato. Experimente nossa massa artesanal preparada com tomates frescos e ervas selecionadas.</p>
             </div>
 
-            <div id="produto2" class="pratos">
+            <div id="produto2" class="pratos prato_clicavel" data-id="prato3">
                 <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=200" alt="Hambúrguer Artesanal">
                 <p>A explosão de sabor que você merece. Suculento hambúrguer artesanal grelhado no fogo, acompanhado de ingredientes premium.</p>
             </div>
 
-            <div id="produto3" class="pratos">
+            <div id="produto3" class="pratos prato_clicavel" data-id="prato4">
                 <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=200" alt="Salada Gourmet">
                 <p>Opções leves e sofisticadas para o seu evento. Ingredientes sempre frescos para garantir o máximo de sabor.</p>
             </div>
         </div>
         </div>
 
-        <div id="topo_direita">
+        <div id="topo_direita" class="prato_clicavel" data-id="prato5">
             <h2>Alimentando a alma</h2>
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500&auto=format&fit=crop" alt="Foto de comida">
+        <img  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500&auto=format&fit=crop" alt="Foto de comida">
         <p>Oferecemos uma experiência gastronômica única, combinando tradição e inovação para criar pratos que encantam o paladar e a alma.</p>
 
 
@@ -66,7 +66,7 @@
 
     <section id="sobre_nos">
         <div id="quem_somos">
-            <div id="primeira_oarte_qs" class="quem_somos" >
+            <div id="primeira_parte_qs" class="quem_somos" >
                 <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500&auto=format&fit=crop" alt="">
             <h2>De onde viemos e quem somos</h2>
             <p>Fundado em 2010, nosso buffet nasceu da paixão pela culinária e pelo desejo de proporcionar momentos inesquecíveis através da gastronomia. Com uma equipe dedicada e experiente, oferecemos serviços personalizados para eventos de todos os tamanhos, garantindo qualidade e excelência em cada detalhe.</p>
@@ -92,11 +92,24 @@
 
 
 
-    <footer class="rodape">
-        <a href="https://www.instagram.com/rapha_bonome/"><i class="fa-brands fa-instagram"></i> Siga-nos no Instagram</a>
+    <footer id="rodape" class="rodape">
+
+        <a href="https://www.instagram.com/rapha_bonome/" id="insta"><i class="fa-brands fa-instagram"></i> Siga-nos no Instagram</a>
+
+
+        <pre> <i class="fa-solid fa-house-chimney"></i>Endereço: Rua Exemplo, 123 - Cidade, Estado
+            
+
+<i class="fa-regular fa-clock"></i>Horário de atendimento:
+
+    Segunda a Sexta, das 10h às 22h 
+
+    Sábados, domingos e feriados, das 10h às 15h</pre>
     </footer>
 
     <a href="https://wa.me/5521990649896" class="botao-whatsapp-fixo" target="_blank">
+
+    
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icone-whatsapp">
     </a>    
 
@@ -105,8 +118,8 @@
     <div class="cartao_modal">
         <img id="imagem_modal" src="" alt="">
         <span id="fechar_modal">&times;</span>
-        <h3>Título do Modal</h3>
-        <p>Conteúdo que você quer mostrar.</p>
+        <h3 id="titulo_modal">Título do Modal</h3>
+        <p id="txt_modal">Conteúdo que você quer mostrar.</p>
     </div>
 </div>
 

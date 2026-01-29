@@ -1,0 +1,24 @@
+{
+  "prato1": {
+    "titulo": "Lasanha à Bolonhesa",
+    "descricao": "Massa artesanal com molho de carne moída e queijo."
+  },
+    "prato2": {
+        "titulo": "Frango Assado",
+        "descricao": "Frango marinado com ervas finas e batatas."
+        }, 
+
+    "prato3": {
+        "titulo": "Salada Caesar",
+        "descricao": "Alface, croutons, parmesão e molho Caesar."
+        },
+    "prato4": {
+        "titulo": "Lasanha à Bolonhesa",
+        "descricao": "Massa artesanal com molho de carne moída e queijo."
+  },
+  "prato5": {
+        "titulo": "Lasanha à Bolonhesa",
+        "descricao": "Massa artesanal com molho de carne moída e queijo."
+  }
+        
+}
