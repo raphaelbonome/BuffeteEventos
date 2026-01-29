@@ -62,11 +62,28 @@ display: none;
 #servicos{
     position: relative;
     
+   
+}
+
+#fundo_pratos{
+    position: relative;
+    height: 1250px;
+    width: 90%;
+    z-index: -1;
+    left: -10px;
 }
 .pratos{
+    box-shadow: red 10px 10px 1px;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative; 
+    top: -1100px;
     text-align: center;
-    background-color: rgb(209, 209, 12);
-    box-shadow: red 5px 5px 5px;
+    width: 60%;
+    left: 10vw;
+    border: yellow 2px solid;
+
+    
 }
 
 .botao-whatsapp-fixo {
