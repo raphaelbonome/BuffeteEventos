@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(175, 175, 74);
+    background-color: rgba(158, 158, 11, 0.678);
 }
 header{
    /* Remova o 110vw e as margens negativas */
@@ -15,21 +15,24 @@ header{
 
 
 }
-
-
-header h1{
-    padding: 100px;
+#titulo_pagina {
     color: red;
     text-align: center;
-    font-size: 30pt;
-    
+    font-size: 40pt;
+    text-shadow: 2px 2px 5px yellow;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-top: 25PX;
+
 }
+
+
 #imagem_clicavel {
     cursor: pointer;
     position: fixed;
     width: 100px;
-    top: 20px; /* Ajuste a altura do topo */
-    left: 20px; /* Use uma distância fixa da borda esquerda */
+    top: 95px; /* Ajuste a altura do topo */
+    left: 0px; /* Use uma distância fixa da borda esquerda */
     z-index: 10;
 }
 #menu_navegacao {
