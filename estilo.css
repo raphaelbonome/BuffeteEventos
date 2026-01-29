@@ -1,0 +1,103 @@
+
+body{
+    background-color: rgb(175, 175, 74);
+}
+header{
+   /* Remova o 110vw e as margens negativas */
+    width: 100vw;
+    height: 30vh;
+    background: url("fundo_cb.jpg") no-repeat;
+    background-size: cover; /* Adicione isso para o fundo não quebrar */
+    position: relative;
+    top: -50px;
+    box-shadow: red 10px 5px 5px;
+    left:-10px
+
+
+}
+
+
+header h1{
+    padding: 100px;
+    color: red;
+    text-align: center;
+    font-size: 30pt;
+    
+}
+#imagem_clicavel {
+    cursor: pointer;
+    position: fixed;
+    width: 100px;
+    top: 20px; /* Ajuste a altura do topo */
+    left: 20px; /* Use uma distância fixa da borda esquerda */
+    z-index: 10;
+}
+#menu_navegacao {
+display: none;
+    z-index: 11;
+    position: fixed;
+    top: 150px; /* Coloque abaixo da imagem clicável */
+    left: 0px;
+    
+}
+#menu_navegacao ul {
+    list-style-type: none;;
+    display: flex;
+}
+#menu_navegacao ul li a {
+
+    border: yellow 2px solid;
+    border-radius: 10px;
+    background-color: yellow;
+    font-size: 18pt;
+    text-decoration: none;
+    margin-right: 15px;
+    color: red;
+    list-style: none;
+}
+
+#servicos{
+    position: relative;
+    
+}
+.pratos{
+    text-align: center;
+    background-color: rgb(209, 209, 12);
+    box-shadow: red 5px 5px 5px;
+}
+
+.botao-whatsapp-fixo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.botao-whatsapp-fixo img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/*------------------------ telas grandes ------------------------*/
+@media (min-width: 431px) {
+    #servicos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pratos{
+        width: 30%;
+    }
+
+
+
+
+}
