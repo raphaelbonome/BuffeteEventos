@@ -2,16 +2,17 @@
 <html lang="Pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estilo.css">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buffet e Eventos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1 id="titulo_pagina">Buffet e Eventos</h1>
         <img id="imagem_clicavel" src="prato_fechado-removebg-preview.png" alt="prato com tampa aperte para menu">
-        <nav  id="menu_navegacao">
+        
+        <nav id="menu_navegacao">
             <ul>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
@@ -21,31 +22,27 @@
     </header>
 
     <section id="servicos">
-        <div id="fundo_servico">
-        <img id="fundo_pratos" src="menu_fundo.png" alt="">
+        <img id="fundo_pratos" src="menu_fundo.png" alt="Fundo decorativo do menu">
+
+        <div id="container_pratos_conteudo">
+            <div id="produto1" class="pratos">
+                <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80&w=200" alt="Comida Italiana">
+                <p>Sabores da Itália no seu prato. Experimente nossa massa artesanal preparada com tomates frescos e ervas selecionadas.</p>
+            </div>
+
+            <div id="produto2" class="pratos">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=200" alt="Hambúrguer Artesanal">
+                <p>A explosão de sabor que você merece. Suculento hambúrguer artesanal grelhado no fogo, acompanhado de ingredientes premium.</p>
+            </div>
+
+            <div id="produto3" class="pratos">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=200" alt="Salada Gourmet">
+                <p>Opções leves e sofisticadas para o seu evento. Ingredientes sempre frescos para garantir o máximo de sabor.</p>
+            </div>
         </div>
-        <div id="produto1" class="pratos">
-            <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80&w=200" alt=" comida">
-                <p>Sabores da Itália no seu prato. Experimente nossa massa artesanal preparada com tomates frescos e ervas selecionadas para uma experiência gastronômica autêntica.</p>
-        </div>
-        <div id="produto2" class="pratos">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=200" alt="comida">
-            <p>A explosão de sabor que você merece. Suculento hambúrguer artesanal grelhado no fogo, acompanhado de ingredientes premium e um pão selado na manteiga.</p>
-        
-        </div>
-        <div id="produto3" class="pratos">
-            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=200" alt="comida">
-
-            <p>A explosão de sabor que você merece. Suculento hambúrguer artesanal grelhado no fogo, acompanhado de ingredientes premium e um pão selado na manteiga.</p>
-
-        </div>
-
-
-
     </section>
 
-
- <footer class="rodape">
+    <footer class="rodape">
         <a href="https://www.instagram.com/rapha_bonome/"><i class="fa-brands fa-instagram"></i> Siga-nos no Instagram</a>
     </footer>
 
@@ -53,6 +50,16 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icone-whatsapp">
     </a>    
 
-    <script src="logica.js"></script>
+    
+    <div id="fundo_modal" class="modal-oculto">
+    <div class="cartao_modal">
+        <img id="imagem_modal" src="" alt="">
+        <span id="fechar_modal">&times;</span>
+        <h3>Título do Modal</h3>
+        <p>Conteúdo que você quer mostrar.</p>
+    </div>
+</div>
+
+<script src="logica.js"></script> 
 </body>
 </html>
